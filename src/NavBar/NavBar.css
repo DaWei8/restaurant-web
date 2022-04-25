@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    color: white;
+    flex-direction: row;
+    background: transparent;
+    max-height: 50vh;
+}
+
+.span0 {
+    color: rgba(255,53,53,1);
+}
+.span1 {
+    color: white;
+} 
