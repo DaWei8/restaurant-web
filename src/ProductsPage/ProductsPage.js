@@ -1,6 +1,9 @@
 import React from 'react';
 import img from './image.png';
 import './ProductsPage.css';
+import './ProductsPage.css';
+
+
 
 const ProductsPage = () => {
     return (
@@ -13,25 +16,14 @@ const ProductsPage = () => {
                 <ProductCard price='50$' /><ProductCard price='50$' /><ProductCard price='50$' />
                 <ProductCard price='50$' /><ProductCard price='50$' /><ProductCard price='50$' />
             </div>
+            <ProductCard price='50$' />
         </div>
     );
 }
-//Styling for the product card
-
-// const style = {
-//     background: 'blue',
-//     height: '406px',
-//     width: '345px',
-//     paddingLeft: '150px',
-//     color: 'white',
-//     fontSize: '16px',
-//     border: '1px solid blue',
-//     cursor: 'pointer',
-//     borderRadius: '10px',
-// };
 
 // this is the product card
 const ProductCard = (props) => {
+
     return (
         <div className='product-card' >
             <div className='product-card-contents'>
@@ -40,9 +32,10 @@ const ProductCard = (props) => {
                 <div className='product-card-name'>Lorem Ipsum</div>
                 <div className='product-card-buy-button'><div className='product-card-buy-button-text'>Buy now</div></div>
             </div>
-        </div>
+            </div>
     );
 }
+
 
 // this is the page heading
 const PageHeading = (props) => {
@@ -53,7 +46,5 @@ const PageHeading = (props) => {
         </div>
     )
 }
-
-
 
 export default ProductsPage
