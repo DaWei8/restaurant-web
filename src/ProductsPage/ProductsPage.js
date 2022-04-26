@@ -8,6 +8,7 @@ const ProductsPage = () => {
         </div>
     );
 }
+
 //Styling for the product card
 
 const style = {
@@ -32,7 +33,6 @@ const ProductCard = (props) => {
     );
 }
 
-
 const PageHeading = (props) => {
     return (
         <div className='page-heading-title'>
@@ -40,6 +40,5 @@ const PageHeading = (props) => {
             <div className='page-heading-line'></div>
         </div>)
 }
-
 
 export default ProductsPage
