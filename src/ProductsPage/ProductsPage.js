@@ -30,6 +30,7 @@ const ProductsPage = () => {
 //     borderRadius: '10px',
 // };
 
+// this is the product card
 const ProductCard = (props) => {
     return (
         <div className='product-card' >
@@ -43,7 +44,7 @@ const ProductCard = (props) => {
     );
 }
 
-
+// this is the page heading
 const PageHeading = (props) => {
     return (
         <div className='page-heading'>
@@ -52,6 +53,7 @@ const PageHeading = (props) => {
         </div>
     )
 }
+
 
 
 export default ProductsPage
