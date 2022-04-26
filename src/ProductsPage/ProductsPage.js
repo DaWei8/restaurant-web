@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProductsPage.css'
 
 const ProductsPage = () => {
     return (
@@ -11,20 +12,21 @@ const ProductsPage = () => {
 
 //Styling for the product card
 
-const style = {
-    background: 'red',
-    height: '406px',
-    weight: '345px',
-    color: 'white',
-    fontSize: '16px',
-    border: '1px solid blue',
-    cursor: 'pointer',
-    borderRadius: '10px',
-};
+// const productCardStyle = {
+//     background: 'blue',
+//     height: '406px',
+//     width: '345px',
+//     color: 'white',
+//     fontSize: '16px',
+//     border: '1px solid white',
+//     cursor: 'pointer',
+//     borderRadius: '10px',
+// };
 
 const ProductCard = (props) => {
+
     return (
-        <div className='product-card-container' style={style}>
+        <div className='product-card-container'>
             <div>{props.price}</div>
             <div><img src='src\ProductsPage\baiq-daling-ykThMylLsbY-unsplash.png' /></div>
             <div className='product-name'>Lorem Ipsum</div>
