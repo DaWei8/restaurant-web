@@ -1,0 +1,156 @@
+/* ===========Container=========== */
+.container {
+    padding: 20px 10%;
+    height: max-content;
+}
+
+/* ===========HEADER=========== */
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    font-family: Montserrat, sans-serif;
+}
+
+header ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header ul a {
+    padding: 10px 25px;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 25px;
+}
+
+header ul a:hover {
+    color: #fff;
+    background-color: #FF3636;
+    transition: all 0.3s linear;
+}
+
+/* ===========FOOTER=========== */
+footer {
+    background-color: #FF3636;
+    margin-top: 20px;
+    padding: 50px 10%;
+    border-top: 5px solid #000;
+}
+
+footer>img {
+    color: #fff;
+}
+
+.footer {
+    font-family: Montserrat;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.footer h2 {
+    color: #fff;
+}
+
+.footer-links a {
+    font-weight: 500;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    margin-right: 20px;
+    color: #333;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-links div {
+    margin: 30px 0;
+    ;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact h2 {
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.footer-socials {
+
+    margin-top: 20px;
+}
+
+.footer-socials img {
+    height: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#top {
+    text-align: left;
+    height: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    header ul a {
+        padding: 10px 15px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul a {
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        margin: 10px 0;
+    }
+
+    .footer-links img {
+        display: none;
+    }
+
+    .footer-contact {
+        text-align: left;
+    }
+
+    .footer-socials img {
+        height: 20px;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+}

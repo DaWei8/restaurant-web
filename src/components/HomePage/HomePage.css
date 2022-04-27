@@ -1,0 +1,255 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.hero__left {
+    font-family: Montserrat;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.hero__left p {
+    margin: 30px 0;
+    text-align: left;
+    line-height: 32px;
+    width: 400px;
+}
+
+.hero__right img {
+    height: 400px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+.hero button,
+.meal-details button {
+    font-family: montserrat;
+    padding: 10px 15px;
+    border: 2px solid #FF3636;
+    color: #fff;
+    border-radius: 30px;
+    width: 300px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.hero button:hover,
+.meal-details button:hover {
+    color: #fff;
+    background-color: #FF3636;
+    transition: all 0.3s linear;
+}
+
+.mid-hero {
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    padding-bottom: 100px;
+}
+
+.mid--hero {
+    border-radius: 10px;
+    background: #FF3636;
+    margin: auto;
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.mid--hero h3 {
+
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.mid--hero p {
+    font-family: montserrat;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mid--hero img {
+    height: 200px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding-top: 100px;
+    padding: 30px;
+    padding-bottom: 60px;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* ============OUR MEALS================ */
+
+
+.our-meals {
+    margin: auto;
+    padding-top: 100px;
+}
+
+.our-meal {
+    width: 600px;
+    margin: auto;
+}
+
+.one-meal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #FF3636;
+}
+
+.one-meal img {
+    border: 5px solid #FF3636;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.meal-details {
+    width: 350px;
+    text-align: left;
+    margin: auto;
+}
+
+.meal-details h3 {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.meal-details p {
+    font-family: montserrat;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.meal-details span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF3636;
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero__left {
+        margin-left: 0px;
+    }
+
+    .mid--hero img {
+        height: 100px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero__left {
+        margin-left: 0;
+    }
+
+    .hero__left p {
+        margin: 10px 0;
+        line-height: 22px;
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .hero__right img {
+        height: 200px;
+    }
+
+    .hero__left {
+        margin-left: 0px;
+    }
+
+    .mid--hero {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+    .mid--hero img {
+        height: 100px;
+        width: 200px;
+    }
+
+    .mid-hero {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .our-meals h2 {
+        font-size: 26px;
+    }
+
+    .our-meal {
+        width: 300px;
+    }
+
+    .one-meal {
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+        width: 200px;
+        margin: auto;
+    }
+
+    .one-meal img {
+        border: 5px solid #FF3636;
+        border-radius: 50%;
+        height: 100px;
+        margin: auto;
+    }
+
+    .meal-details {
+        width: 200px;
+    }
+
+    .meal-details h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .meal-details p {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .meal-details span {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .hero button,
+    .meal-details button {
+        width: 170px;
+    }
+}
